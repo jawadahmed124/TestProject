@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="custom_font_title_text.ttf">
+            <string>VAGRounded-BoldCn</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="r7n-DN-smm">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7H-wh-GEG">
+                                <rect key="frame" x="118" y="110" width="84" height="19"/>
+                                <fontDescription key="fontDescription" name="VAGRounded-BoldCn" family="VAGRounded-Bold Cn" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJT-OT-Y1K">
+                                <rect key="frame" x="0.0" y="129" width="320" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PJT-OT-Y1K" secondAttribute="height" multiplier="32:31" id="yaf-St-pq4"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Sqw-gZ-wlL"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="PmC-ty-R8H">
+                                <rect key="frame" x="141" y="444" width="39" height="37"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PJT-OT-Y1K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Hl-bd-p1j"/>
+                            <constraint firstItem="PJT-OT-Y1K" firstAttribute="top" secondItem="R7H-wh-GEG" secondAttribute="bottom" id="6q1-da-8Ir"/>
+                            <constraint firstItem="r7n-DN-smm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ku3-Ie-d49"/>
+                            <constraint firstItem="r7n-DN-smm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MtD-rT-9Sv"/>
+                            <constraint firstItem="PJT-OT-Y1K" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Nt9-3H-quH"/>
+                            <constraint firstItem="R7H-wh-GEG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Thq-Wc-Prd"/>
+                            <constraint firstItem="PmC-ty-R8H" firstAttribute="centerX" secondItem="PJT-OT-Y1K" secondAttribute="centerX" id="Vsp-yJ-pm7"/>
+                            <constraint firstAttribute="trailing" secondItem="r7n-DN-smm" secondAttribute="trailing" id="W6r-VW-X9S"/>
+                            <constraint firstItem="PmC-ty-R8H" firstAttribute="top" secondItem="PJT-OT-Y1K" secondAttribute="bottom" constant="5" id="rnN-zO-TsD"/>
+                            <constraint firstItem="PJT-OT-Y1K" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tNB-IF-6pY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r7n-DN-smm" secondAttribute="bottom" id="wqA-ri-8T3"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="pageControl" destination="PmC-ty-R8H" id="vpx-eY-0XO"/>
+                        <outlet property="scrollView_" destination="PJT-OT-Y1K" id="vE3-Bn-UvE"/>
+                        <outlet property="titleLabel" destination="R7H-wh-GEG" id="okb-th-y1x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365" y="314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="340" height="604"/>
+    </resources>
+</document>

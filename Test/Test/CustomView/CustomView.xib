@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SHOWG.TTF">
+            <string>ShowcardGothic-Reg</string>
+            <string>ShowcardGothic-Reg</string>
+            <string>ShowcardGothic-Reg</string>
+            <string>ShowcardGothic-Reg</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="h9P-EN-r9G" customClass="CustomView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" tag="901" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="691-tr-TaL">
+                    <rect key="frame" x="22" y="22" width="128" height="122"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" tag="701" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_frame_arc" translatesAutoresizingMaskIntoConstraints="NO" id="25c-J0-tkG" userLabel="Frame">
+                    <rect key="frame" x="20" y="20" width="131" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="25c-J0-tkG" secondAttribute="height" multiplier="21:20" id="T6q-d6-UiK"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="801" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKu-8w-TuX">
+                    <rect key="frame" x="19" y="19" width="15" height="34"/>
+                    <fontDescription key="fontDescription" name="ShowcardGothic-Reg" family="Showcard Gothic" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" tag="902" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sGs-fR-pKd">
+                    <rect key="frame" x="171" y="22" width="128" height="122"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" tag="702" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_frame_arc" translatesAutoresizingMaskIntoConstraints="NO" id="PYS-Lc-dcV" userLabel="Frame">
+                    <rect key="frame" x="169" y="20" width="131" height="125"/>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="802" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQT-WH-6HZ">
+                    <rect key="frame" x="286" y="19" width="15" height="34"/>
+                    <fontDescription key="fontDescription" name="ShowcardGothic-Reg" family="Showcard Gothic" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" tag="903" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="huB-Tm-WSz">
+                    <rect key="frame" x="22" y="167" width="128" height="122"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" tag="703" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_frame_arc" translatesAutoresizingMaskIntoConstraints="NO" id="eAx-JX-oDb" userLabel="Frame">
+                    <rect key="frame" x="20" y="165" width="131" height="125"/>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="803" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytm-Uo-kpN">
+                    <rect key="frame" x="19" y="261" width="15" height="34"/>
+                    <fontDescription key="fontDescription" name="ShowcardGothic-Reg" family="Showcard Gothic" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" tag="904" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hyQ-BZ-WDH">
+                    <rect key="frame" x="171" y="167" width="128" height="122"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" tag="704" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_frame_arc" translatesAutoresizingMaskIntoConstraints="NO" id="LRw-pU-VqI" userLabel="Frame">
+                    <rect key="frame" x="169" y="165" width="131" height="125"/>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="804" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTz-2H-w4D">
+                    <rect key="frame" x="286" y="261" width="15" height="34"/>
+                    <fontDescription key="fontDescription" name="ShowcardGothic-Reg" family="Showcard Gothic" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eAx-JX-oDb" firstAttribute="height" secondItem="25c-J0-tkG" secondAttribute="height" id="3GH-Wx-Euu"/>
+                <constraint firstItem="691-tr-TaL" firstAttribute="width" secondItem="25c-J0-tkG" secondAttribute="width" constant="-3" id="6c9-qO-KBF"/>
+                <constraint firstAttribute="trailing" secondItem="LRw-pU-VqI" secondAttribute="trailing" constant="20" id="9d6-LV-CKf"/>
+                <constraint firstItem="PYS-Lc-dcV" firstAttribute="top" secondItem="h9P-EN-r9G" secondAttribute="top" constant="20" id="Azd-iU-InX"/>
+                <constraint firstItem="yKu-8w-TuX" firstAttribute="leading" secondItem="25c-J0-tkG" secondAttribute="leading" constant="-1" id="DtE-hM-YVq"/>
+                <constraint firstItem="691-tr-TaL" firstAttribute="centerY" secondItem="25c-J0-tkG" secondAttribute="centerY" id="Ett-vh-Js7"/>
+                <constraint firstAttribute="bottom" secondItem="eAx-JX-oDb" secondAttribute="bottom" constant="20" id="FDI-EE-Z0i"/>
+                <constraint firstItem="sGs-fR-pKd" firstAttribute="height" secondItem="PYS-Lc-dcV" secondAttribute="height" constant="-3" id="GO8-fO-pcE"/>
+                <constraint firstItem="vTz-2H-w4D" firstAttribute="bottom" secondItem="LRw-pU-VqI" secondAttribute="bottom" constant="5" id="Mfl-U1-Ih4"/>
+                <constraint firstItem="hyQ-BZ-WDH" firstAttribute="centerY" secondItem="LRw-pU-VqI" secondAttribute="centerY" id="OGt-WS-ITU"/>
+                <constraint firstItem="25c-J0-tkG" firstAttribute="leading" secondItem="h9P-EN-r9G" secondAttribute="leading" constant="20" id="PQf-AP-Ri9"/>
+                <constraint firstItem="PYS-Lc-dcV" firstAttribute="width" secondItem="25c-J0-tkG" secondAttribute="width" id="RGV-G9-9fa"/>
+                <constraint firstItem="vTz-2H-w4D" firstAttribute="trailing" secondItem="LRw-pU-VqI" secondAttribute="trailing" constant="1" id="RMy-sK-cy2"/>
+                <constraint firstItem="vQT-WH-6HZ" firstAttribute="top" secondItem="PYS-Lc-dcV" secondAttribute="top" constant="-1" id="SYT-PM-xSB"/>
+                <constraint firstItem="PYS-Lc-dcV" firstAttribute="height" secondItem="25c-J0-tkG" secondAttribute="height" id="Tcr-Rx-e9s"/>
+                <constraint firstItem="eAx-JX-oDb" firstAttribute="width" secondItem="25c-J0-tkG" secondAttribute="width" id="Vk2-9k-Prs"/>
+                <constraint firstItem="eAx-JX-oDb" firstAttribute="leading" secondItem="h9P-EN-r9G" secondAttribute="leading" constant="20" id="WSU-4y-9U0"/>
+                <constraint firstItem="hyQ-BZ-WDH" firstAttribute="centerX" secondItem="LRw-pU-VqI" secondAttribute="centerX" id="YDK-sZ-bhL"/>
+                <constraint firstItem="huB-Tm-WSz" firstAttribute="centerX" secondItem="eAx-JX-oDb" secondAttribute="centerX" id="YhB-WS-iEf"/>
+                <constraint firstItem="ytm-Uo-kpN" firstAttribute="bottom" secondItem="eAx-JX-oDb" secondAttribute="bottom" constant="5" id="arr-Tu-wNT"/>
+                <constraint firstItem="eAx-JX-oDb" firstAttribute="top" secondItem="25c-J0-tkG" secondAttribute="bottom" constant="20" id="b0t-Ve-iq3"/>
+                <constraint firstItem="huB-Tm-WSz" firstAttribute="centerY" secondItem="eAx-JX-oDb" secondAttribute="centerY" id="dQ7-KM-VbA"/>
+                <constraint firstItem="yKu-8w-TuX" firstAttribute="top" secondItem="25c-J0-tkG" secondAttribute="top" constant="-1" id="dZh-Kx-r18"/>
+                <constraint firstItem="ytm-Uo-kpN" firstAttribute="leading" secondItem="eAx-JX-oDb" secondAttribute="leading" constant="-1" id="eI0-G1-uUV"/>
+                <constraint firstItem="sGs-fR-pKd" firstAttribute="width" secondItem="PYS-Lc-dcV" secondAttribute="width" constant="-3" id="eeX-Io-O4V"/>
+                <constraint firstItem="25c-J0-tkG" firstAttribute="top" secondItem="h9P-EN-r9G" secondAttribute="top" constant="20" id="fWe-XN-3Gh"/>
+                <constraint firstItem="691-tr-TaL" firstAttribute="height" secondItem="25c-J0-tkG" secondAttribute="height" constant="-3" id="gD1-dh-jDS"/>
+                <constraint firstItem="vQT-WH-6HZ" firstAttribute="trailing" secondItem="PYS-Lc-dcV" secondAttribute="trailing" constant="1" id="hCD-me-q0u"/>
+                <constraint firstItem="hyQ-BZ-WDH" firstAttribute="height" secondItem="LRw-pU-VqI" secondAttribute="height" constant="-3" id="hJh-kh-d5p"/>
+                <constraint firstItem="sGs-fR-pKd" firstAttribute="centerX" secondItem="PYS-Lc-dcV" secondAttribute="centerX" id="mFs-DX-LNf"/>
+                <constraint firstAttribute="trailing" secondItem="PYS-Lc-dcV" secondAttribute="trailing" constant="20" id="o0s-DT-ZS9"/>
+                <constraint firstItem="LRw-pU-VqI" firstAttribute="height" secondItem="25c-J0-tkG" secondAttribute="height" id="pKh-qH-faT"/>
+                <constraint firstItem="sGs-fR-pKd" firstAttribute="centerY" secondItem="PYS-Lc-dcV" secondAttribute="centerY" id="pl7-Ey-kzc"/>
+                <constraint firstItem="huB-Tm-WSz" firstAttribute="height" secondItem="eAx-JX-oDb" secondAttribute="height" constant="-3" id="tTm-Cd-gkP"/>
+                <constraint firstItem="691-tr-TaL" firstAttribute="centerX" secondItem="25c-J0-tkG" secondAttribute="centerX" id="uVV-nM-9BY"/>
+                <constraint firstAttribute="bottom" secondItem="LRw-pU-VqI" secondAttribute="bottom" constant="20" id="v3A-1j-Ogd"/>
+                <constraint firstItem="hyQ-BZ-WDH" firstAttribute="width" secondItem="LRw-pU-VqI" secondAttribute="width" constant="-3" id="wbo-dJ-cHZ"/>
+                <constraint firstItem="LRw-pU-VqI" firstAttribute="width" secondItem="25c-J0-tkG" secondAttribute="width" id="xJa-Xf-Fdr"/>
+                <constraint firstItem="huB-Tm-WSz" firstAttribute="width" secondItem="eAx-JX-oDb" secondAttribute="width" constant="-3" id="zzc-yW-TiA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="461" y="237"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_frame_arc" width="105" height="100"/>
+    </resources>
+</document>
