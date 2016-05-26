@@ -17,20 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // stroke Title label
     NSDictionary *strokeTextAttributes = @{NSStrokeColorAttributeName : [UIColor blueColor],
                                            NSForegroundColorAttributeName : [UIColor whiteColor],
                                            NSStrokeWidthAttributeName : @-3.0};
     
     titleLabel.attributedText = [[NSMutableAttributedString alloc] initWithString:titleLabel.text attributes:strokeTextAttributes];
     
+    // init Pages and Images Array
     pageViews = [NSMutableArray new];
     imagesArray = [NSMutableArray new];
     
+    // Add images
     for (NSInteger i=1; i<=12; i++) {
         NSString *imageName = [NSString stringWithFormat:@"image_%zd", i];
         [imagesArray addObject:[UIImage imageNamed:imageName]];
     }
     
+    // Count number of pages
     numberOfPages = ceilf(imagesArray.count/4.0);
     pageControl.numberOfPages = numberOfPages;
 }
@@ -56,6 +60,8 @@
         /**
          * If pageId == 0, then Start pageId with the last number
          * else: decrement 1 in the "i".
+         * If we have images in multiples of 4, then length will be 4
+         * else subtract the remainder
          */
         
         NSInteger pageId, rangeLength;
@@ -69,8 +75,11 @@
             rangeLength = 4;
         }
         
+        // Create Array of images with rangeLength and pass to Page
         NSRange range = NSMakeRange(pageId*4, rangeLength);
         NSArray *images = [imagesArray objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:range]];
+        
+        // create Page
         CustomView *view = [[CustomView alloc] initWithPage:pageId andImages:images];
         view.frame = CGRectMake(scrollView_.frame.size.width * i, 0, scrollView_.frame.size.width, scrollView_.frame.size.height);
         
